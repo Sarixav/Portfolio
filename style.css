@@ -81,6 +81,10 @@ main{
 }
 
 /* INICIO HOME */
+hr {
+    height: 0.5px;
+    background: linear-gradient(to right, #cba2f1, #e6d6f5); 
+}          /* ---BARRA--- */
 .home{
     width: 100%;
     min-height: 500px;
@@ -107,26 +111,28 @@ main{
 }
 .home1 .logo{
     margin: 4rem 0;
-    border: solid 2px var(--white);
+    border: solid 3px var(--white);
     padding: 2.5rem;
     text-align: center;
+    margin-top: 13rem;
 }
 .home1 .logo h2{
-    font-size: 4rem;
-    font-weight: 400;
+    font-size: 4.5rem;
+    font-weight: 200;
 }
 .home1 .logo h1{
     font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 800;
     margin-top: 1rem;
+    font-style: italic;
 }
 .home img{
-    width: 200px;
+    width: 280px;
     border-radius: 50%;
     box-shadow: 9px -1px 97px -25px rgba(0,0,0,0.75);
     position: relative;
     display: flex;
-    bottom: -100px;
+    bottom: -140px;
 }
 .profile{
     display: flex;
@@ -150,35 +156,36 @@ main{
     justify-content: center;
     text-align: center;
 }
-
 .about1 h3{
-    font-size: 3rem;
+    font-size: 4.5rem;
     margin-bottom: 3rem;
-    font-weight: 500;
+    margin-top: 3rem;
+    font-weight: 200;
 }
 .about1 .text-about{
-    font-size: 2rem;
+    font-size: 1.3rem;
+    font-weight: 800;
     margin-bottom: 3rem;
 }
-.about1 .click{
+.click{
     font-size: 1.5rem;
-    color: var(--colo2);
+    color: var(--black);
+    margin-bottom: 50px;
+    font-weight: 400 ;
 }
-.about .click p{
-    color: var(--color1);
-}
+
 .click a{
     text-decoration: none;
-    color: var(--black);
-    font-weight: 500;
+    color: var(--color1);
+    font-weight: 600;
+    font-style: italic;
 }
 /* FIN ABOUT */
 
 /* INICIO JOBS*/
 .jobs {
-    
     width: 100%;
-    height: 500px;
+    height: 600px;
     min-height: 250px;
     background-color: var(--colo2);
     justify-content: center;
@@ -186,19 +193,35 @@ main{
 }
 .jobs h3{
     display: flex;
-    font-size: 3rem;
+    font-size: 4.5rem;
     justify-content: center;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     position: relative;
+    font-weight: 200;
+}
+.jobs1 h4 {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
     font-weight: 500;
 }
+.jobs1 p {
+    display: flex;
+    color: var(--color1);
+    font-size: 1.2rem;
+    font-style: italic;
+    justify-content: center;
+    margin-top: 1.5rem;
+    font-weight: 700;
+    }
 .jobs1 {
     width: 90%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 .jobs-container {
     display: flex;
@@ -210,16 +233,21 @@ main{
     text-decoration: none;
     display: block;
     border-radius: 10px;
+    border-color: var(--color1);
+    border: solid 5px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: var(--black);
+    color: var(--white);
+    transition: 1s;
 }
 .image-link h4{
-    margin: 10px 0;
-    
+    margin: 0px 0;
+    background-color: var(--color1);
+    transition: 1s;
 }
 .image-link:hover {
-    transform: scale(1.05);
+    transform: rotateY(180deg);
+    transition: 1s;
 }
 .image {
     display: block;
@@ -229,6 +257,14 @@ main{
 /* FIN JOBS */
 
 /* CONTACT */
+.contact-me h3{
+        display: flex;
+        justify-content: center;
+        font-size: 4.5rem;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+        font-weight: 200;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -253,10 +289,12 @@ main{
     text-align: center;
 }
 .click-contact a {
+    text-decoration: none;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
     font-size: 55px;
+    font-weight: 600;
 }
 .contact-form label {
     display: block;
