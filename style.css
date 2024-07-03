@@ -48,16 +48,13 @@ nav, .links{
     font-weight: 500;
 }
 .links li{
-    
     display: flex;
     align-items: center;
     padding: 5px;
     transition: 1s;
-
+}
 .bottom submit {
     color: white;
-}
-    
 }
 .links li:hover{
     background-color: var(--colo2);
@@ -81,8 +78,9 @@ main{
     justify-content: center;
     margin-top: -80px;
     z-index: 1;
-
 }
+
+/* INICIO HOME */
 .home{
     width: 100%;
     min-height: 500px;
@@ -129,12 +127,14 @@ main{
     position: relative;
     display: flex;
     bottom: -100px;
-    
 }
 .profile{
     display: flex;
     justify-content: center;
 }
+/* FIN HOME */
+
+/* INICIO ABOUT */
 .about{
     width: 100%;
     min-height: 250px;
@@ -154,6 +154,7 @@ main{
 .about1 h3{
     font-size: 3rem;
     margin-bottom: 3rem;
+    font-weight: 500;
 }
 .about1 .text-about{
     font-size: 2rem;
@@ -163,13 +164,17 @@ main{
     font-size: 1.5rem;
     color: var(--colo2);
 }
+.about .click p{
+    color: var(--color1);
+}
 .click a{
     text-decoration: none;
     color: var(--black);
-    font-weight: 400;
+    font-weight: 500;
 }
+/* FIN ABOUT */
 
-/* CONTAINER JOBS*/
+/* INICIO JOBS*/
 .jobs {
     
     width: 100%;
@@ -177,17 +182,16 @@ main{
     min-height: 250px;
     background-color: var(--colo2);
     justify-content: center;
-    text-align: center;   
+    text-align: center;  
 }
-
 .jobs h3{
     display: flex;
     font-size: 3rem;
     justify-content: center;
     margin-top: 2.5rem;
     position: relative;
+    font-weight: 500;
 }
-
 .jobs1 {
     width: 90%;
     height: 100%;
@@ -210,31 +214,27 @@ main{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: var(--black);
 }
-
 .image-link h4{
     margin: 10px 0;
     
 }
-
 .image-link:hover {
     transform: scale(1.05);
 }
-
 .image {
     display: block;
     width: 200px;
     height: 200px;
 }
+/* FIN JOBS */
 
-/* FORMULARIO */
-
+/* CONTACT */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-
 .contact-form {
     background-color: #e1bee7; /* Color lila para el fondo del formulario */
     padding: 20px;
@@ -243,7 +243,10 @@ main{
     max-width: 400px;
     width: 100%;
 }
-
+.contact-form label{
+    color: #6a1b9a;
+    font-weight: 600;
+}
 .contact-form h2 {
     margin-bottom: 20px;
     color: #6a1b9a; /* Color lila más oscuro para el título */
@@ -253,14 +256,13 @@ main{
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-}
+    font-size: 55px;
 }
 .contact-form label {
     display: block;
     margin-bottom: 5px;
     color: #4a148c; /* Color lila más oscuro para las etiquetas */
 }
-
 .contact-form input,
 .contact-form textarea {
     width: 95%;
@@ -270,7 +272,6 @@ main{
     border-radius: 5px;
     background-color: #f3e5f5; /* Fondo lila claro */
 }
-
 .contact-form button {
     width: 100%;
     padding: 10px;
@@ -281,14 +282,13 @@ main{
     font-size: 16px;
     cursor: pointer;
 }
-
 .contact-form button:hover {
     background-color: #6a1b9a; /* Cambio de color en el hover */
 }
-
 button a{
+    text-decoration: none;
     color:var(--white);
-    
+    font-weight: 400;
 }
 .contact-me p{
     display: flex;
@@ -300,12 +300,12 @@ button a{
     margin: 2%;
     top: 50px;
 }
-
 .contact-me a {
    font-size: 20px;
-   
 }
+/* FIN CONTACT */
 
+/* INICIO RRSS */ 
 .rrss {
     display: flex;
     text-align: center;
@@ -313,7 +313,6 @@ button a{
     justify-content: center;
     position: absolute;
     margin-top: 600px;
-    
 }
 .rrss img {
     justify-content: center;
@@ -325,16 +324,16 @@ button a{
     margin: 0 10px; /* Espacio entre las imágenes */
     position: relative;
 }
-
+/* FIN RRSS */
 
 /* FOOTER */
-
 footer {
     display: flex;
     justify-content: center;
     padding: 20px;
     font-size: 16px;
 }
+/* FIN FOOTER */
 
 
 
